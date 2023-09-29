@@ -2,3 +2,94 @@ print("hello world")
 
 message = "Hello, world"
 print(message)
+
+message1 = "world"
+print(message1.title())
+
+name = "Joanna"
+surname = "Ji"
+full_name = f"{name} {surname}"
+print(full_name)
+
+# List
+city = ['sofia', 'varna','plovdiv']
+print(city)
+
+print(city[1].title())
+
+message3 = f"My lovely city is {city[0].upper()}"
+print(message3)
+
+del city[2]
+print(city)
+
+city.insert(3,"ruse")
+print(city)
+
+city.sort()
+print(city)
+
+# IF
+
+if True:
+    print("Yes")
+else:
+    print("No")
+
+if 5>2:
+    print("Right")
+else:
+    print("Wrong")
+
+message4 = 25
+
+if message4 > 20:
+    print("yes")
+elif message4 >25 and message4 < 30:
+    print("Maybe")
+elif message4 <=30:
+    print("No")
+
+# Dictionary
+cities = {1 : "Sofia", 2 : "Varna", 3 : "Plovdiv"}
+print(cities)
+
+bigcity = cities[1]
+print(f"The biggest city in Bulgaria is {bigcity}")
+
+zodia = {
+    "water" : {
+    1 : "Cancer",
+    2 : "Pisces",
+    3 : "Scorpio"},
+    "fire" : {
+    1 : "Aries",
+    2 : "Leo",
+    3 : "Sagittarius"}
+}
+
+print(zodia["fire"][3])
+
+# input data
+
+age = input("How old are you: ")
+print(age)
+
+age = int(age)
+
+# Loops
+
+cars = ['bugatti', 'bmw', 'mercedes', 'audi']
+count = 0
+
+for brand in cars:
+    print(brand)
+    count += 1
+print(count)
+
+for value in range(1,5):
+    print(value)
+
+for brand in cars[:2]:
+    print(brand)
+
