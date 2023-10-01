@@ -106,4 +106,44 @@ while message5 != 'stop':
     message5 = input(pr)
     print(message5)
 
+flag = True
+while flag:
+    message6 = input(pr)
 
+    if message == 'quit':
+        print("Leave loop")
+        flag = False
+    else:
+        print(message6)
+
+flag = True
+while flag:
+    message = inout(pr)
+
+    if message == 'quit':
+        print("Leave loop")
+        flag = False
+    elif message == 'stop':
+        print("Stop the loop")
+        flag = False
+    else:
+        print(message)
+
+while True:
+    message = input(pr)
+
+    if message == 'quit':
+        print("Leave the loop")
+        break
+    elif message == "stop":
+        print("stop the loop")
+        break
+    else:
+        print(message)
+
+current_number = 0
+while current_number <= 10:
+    current_number +=1
+    if current_number % 2 == 0:
+        continue
+    print(current_number)
